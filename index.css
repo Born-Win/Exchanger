@@ -78,11 +78,6 @@ body {
 
 /* SECTIONS */
 
-.give-away-section {
-}
-.you-receive-section {
-}
-
 .we-change-section {
   border-right: none;
 }
@@ -424,7 +419,6 @@ body {
   border-radius: 50%;
   background-color: #1972f5;
 }
-
 
 .chat-icon-close {
   display: none;

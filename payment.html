@@ -4,8 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
+    <link rel="stylesheet" href="./payment.css" />
   </head>
   <body>
-    <div class="payment"></div>
+    <div class="container">
+      <div class="payment">
+        <div class="payment__head">
+          <h2 class="payment__status">Payment expected</h2>
+          <span class="payment__number">№131759</span>
+        </div>
+        <div class="payment__info">
+          <div class="payment__info-inner">
+            <div class="you-are-sending">
+              <div class="you-are-sending__inner">
+                <p class="you-are-sending__text">you are sending</p>
+                <p class="you-are-sending__amount">251 USDT</p>
+                <p class="you-are-sending__additional">Tether ERC20 USDT</p>
+              </div>
+              <img
+                class="you-are-sending__logo"
+                src="https://kingex.io/storage/payment_systems/iex-1aqkXoptWT.svg"
+                alt="logo"
+              />
+            </div>
+
+            <div>
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios/50/forward--v1.png"
+                alt="forward--v1"
+              />
+            </div>
+
+            <div class="you-are-getting">
+              <img
+                class="you-are-getting__logo"
+                src="https://kingex.io/storage/payment_systems/iex-RNMj9rCQxz.svg"
+                alt="logo"
+              />
+              <div class="you-are-getting__inner">
+                <p class="you-are-getting__text">you are getting</p>
+                <p class="you-are-getting__amount">9525.6809 UAH</p>
+                <p class="you-are-getting__additional">Privat Bank UAH</p>
+              </div>
+            </div>
+          </div>
+          <span class="check-details">Check exchange details</span>
+        </div>
+
+        <div class="payment__translate">
+          <div class="payment__translate-subtitle">Translate</div>
+          <div class="input-wrapper"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
