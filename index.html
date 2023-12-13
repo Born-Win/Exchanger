@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sections-wrapper">
+        <section class="give-away-section section">
+          <h2 class="title">Give away</h2>
+          <div class="currency-wrapper">
+            <label class="currency__input">
+              <input
+                class="curency__field"
+                type="text"
+                placeholder="Enter the number"
+                data-id="give-away-input"
+              />
+              <span class="currency__info">
+                <p class="currency__title">UAH</p>
+                <img
+                  src="https://kingex.io/storage/payment_systems/iex-5loi391LUk.png"
+                  class="currency__icon"
+                />
+              </span>
+            </label>
+            <div class="hint-pointer">
+              <span class="hint-pointer__from from"
+                >from
+                <p class="from__value">50271</p></span
+              >
+              <span class="hint-pointer__before before"
+                >before
+                <p class="before__value">7734000 UAH</p></span
+              >
+            </div>
+          </div>
+          <div class="menu" data-id="give-away-menu">
+            <nav class="manu__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item_active">Crypto</li>
+                <li class="nav__item">Banks</li>
+              </ul>
+            </nav>
+            <ul class="menu__list" data-id="give-away-list">
+              <li class="menu__item item">
+                <img
+                  class="item__logo"
+                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
+                  alt="item__logo"
+                />
+                <p class="item__text">Bitcoin</p>
+              </li>
+              <li class="menu__item item_active">
+                <img
+                  class="item__logo"
+                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
+                  alt="item__logo"
+                />
+                <p class="item__text">Bitcoin</p>
+              </li>
+              <li class="menu__item item">
+                <img
+                  class="item__logo"
+                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
+                  alt="item__logo"
+                />
+                <p class="item__text">Bitcoin</p>
+              </li>
+              <li class="menu__item item">
+                <img
+                  class="item__logo"
+                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
+                  alt="item__logo"
+                />
+                <p class="item__text">Bitcoin</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="you-receive-section section">
+          <h2 class="title">You receive</h2>
+          <div class="currency-wrapper">
+            <label class="currency__input">
+              <input
+                class="curency__field"
+                type="text"
+                placeholder="Enter the number"
+                data-id="you-receive-input"
+              />
+              <span class="currency__info">
+                <p class="currency__title">BTC</p>
+                <img
+                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
+                  class="currency__icon"
+                />
+              </span>
+            </label>
+            <div class="hint-pointer">
+              Reserve:
+              <p class="reserve__value">165.302891458 BTC</p>
+            </div>
+          </div>
+
+          <div class="menu" data-id="you-receive-menu">
+            <nav class="manu__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">Crypto</li>
+                <li class="nav__item_active">Banks</li>
+              </ul>
+            </nav>
+            <ul class="menu__list" data-id="you-receive-list">
+              <li class="menu__item item_active" data-id="you-receive-item">
+                <img
+                  class="item__logo"
+                  src="https://kingex.io/storage/payment_systems/iex-RNMj9rCQxz.svg"
+                  alt="item__logo"
+                />
+                <p class="item__text" data-id="bank-name">Privat Bank UAH</p>
+                <span class="item__additional-info">
+                  <p data-id="bank-capital">279 584 190,935</p>
+                  <p data-id="country" class="county-currency">UAH</p>
+                </span>
+              </li>
+              <li class="menu__item item" data-id="you-receive-item">
+                <img
+                  class="item__logo"
+                  src="https://kingex.io/storage/payment_systems/iex-RNMj9rCQxz.svg"
+                  alt="item__logo"
+                />
+                <p class="item__text" data-id="bank-name">Privat Bank UAH</p>
+                <span class="item__additional-info">
+                  <p data-id="bank-capital">279 584 190,935</p>
+                  <p data-id="country" class="county-currency">UAH</p>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="we-change-section section">
+          <h2 class="title">We change Raiffeisen Bank UAH on Bitcoin</h2>
+
+          <div class="exchange-rate">
+            <div class="exchange-rate__value">
+              <p class="label">exchange-rate:</p>
+              <p class="from-value">1 BTC</p>
+              <p class="equal">=</p>
+              <p class="to-value">1554926.6362 UAH</p>
+            </div>
+            <div class="timer">
+              <span class="timer__value">15</span>
+            </div>
+          </div>
+
+          <div class="description">
+            <p class="description__top">
+              Transactions with cards are performed semi-automatically and take
+              up to 60 minutes after receiving the 2nd network confirmation.
+            </p>
+            <p class="description__middle">
+              Cash withdrawal operations are carried out from Monday to Saturday
+              from 10:00 to 18:00.
+            </p>
+            <p class="description__bottom">
+              In this direction, an AML-Check of your funds is carried out. In
+              case of connection of funds with illegitimate sources, the
+              exchange will be suspended.
+            </p>
+          </div>
+
+          <div class="form">
+            <label class="input-wrapper">
+              <input
+                class="email-field"
+                type="email"
+                placeholder="Enter your e-mail"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#818497"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+                />
+              </svg>
+            </label>
+            <label class="input-wrapper">
+              <input
+                class="card-number-field"
+                type="text"
+                placeholder="Card number"
+              />
+              <img
+                width="24px"
+                src="https://kingex.io/storage/payment_systems/iex-5loi391LUk.png"
+                alt="field-icon"
+                draggable="false"
+              />
+            </label>
+
+            <button class="go-payment-button">Go to the payment</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="chat" data-open="false">
+      <div class="chat__head"></div>
+      <div class="chat__content-area"></div>
+      <div class="chat__message-area">
+        <input
+          class="message-field"
+          type="text"
+          placeholder="Отправьте сообщение..."
+        />
+      </div>
+    </div>
+
+    <div class="chat-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="#fff"
+        class="chat-icon-message"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+        />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="#fff"
+        class="chat-icon-close"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+        />
+      </svg>
+    </div>
+  </body>
+</html>
