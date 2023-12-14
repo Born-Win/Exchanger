@@ -92,12 +92,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--form-border-radius);
   margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .payment__info-inner {
   display: flex;
+  width: 100%;
   height: 15vh;
   align-items: center;
   justify-content: center;
@@ -145,8 +148,95 @@ body {
   text-align: center;
   background-color: #95abb7;
   color: #222332;
-  font-size: 12px;
+  font-size: 14px;
   padding: 2px 3px;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.payment__translate {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.payment__translate-subtitle {
+  color: #95abb7;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fields-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  background-color: var(--title-color);
+  width: 60%;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  padding-inline: 15px;
+  border: 1px solid var(--active-link-font-color);
+  border-radius: var(--form-border-radius);
+  .field {
+    height: 100%;
+    color: var(--form-background);
+    background-color: transparent;
+    flex: 1;
+  }
+
+  .copy-btn {
+    cursor: pointer;
+  }
+}
+
+.tooltip {
+  width: 60%;
+  background-color: var(--item-active-bgc);
+  border-radius: var(--form-border-radius);
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.tooltip__text {
+  width: 100%;
+  height: 100%;
+  color: var(--title-color);
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .paid-btn,
+  .cancel-btn {
+    width: calc((100% / 2) - 20px);
+    border-radius: var(--form-border-radius);
+    height: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .paid-btn {
+    background-color: var(--btn-bgc);
+    color: var(--form-background);
+    &:hover {
+      background-color: #5568d4af;
+    }
+  }
+
+  .cancel-btn {
+    background-color: var(--item-active-bgc);
+    color: #4a5861;
+    &:hover {
+      background-color: #f3f4f8af;
+    }
+  }
 }
