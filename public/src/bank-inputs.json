@@ -1,0 +1,311 @@
+{
+  "Privat Bank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "Monobank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "Raiffeisen Bank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "PUMB UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "A-Bank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "Sense Bank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "Oschadbank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "UkrSibBank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "Izibank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "NeoBank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "OTP Bank UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "Kaspi Bank KZT": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name"
+  ],
+  "Halyk Bank KZT": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name"
+  ],
+  "Jusan Bank KZT": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name",
+    "Phone number linked to account"
+  ],
+  "Forte Bank KZT": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name"
+  ],
+  "Bereke Bank KZT": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name"
+  ],
+  "Humo UZS": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name"
+  ],
+  "Uzcard UZS": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name"
+  ],
+  "Card UAH": [
+    "Enter your e-mail",
+    "Card number"
+  ],
+  "Card USD": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name",
+    "Country (Expect USA, Russia and Belarus)"
+  ],
+  "Card EUR": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name",
+    "Country (Expect USA, Russia and Belarus)",
+    "IBAN"
+  ],
+  "Card KZT": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name",
+    "Phone number(Altyn Bank)"
+  ],
+  "Card UZS": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name"
+  ],
+  "Card GBP": [
+    "Enter your e-mail",
+    "Account number",
+    "Reference for payment(optional)",
+    "Full name or company name",
+    "Sort Code"
+  ],
+  "Card TRY": [
+    "Enter your e-mail",
+    "IBAN",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Card GEL": [
+    "Enter your e-mail",
+    "IBAN",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Card PLN": [
+    "Enter your e-mail",
+    "IBAN",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Card CNY": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Card INR": [
+    "Enter your e-mail",
+    "IBAN or account number",
+    "Full name",
+    "Bank name",
+    "IFSC Code"
+  ],
+  "Card NGN": [
+    "Enter your e-mail",
+    "IBAN or account number",
+    "Full name",
+    "Bank name"
+  ],
+  "Wise USD": [
+    "Enter your e-mail",
+    "Wise Email (enabled to receive payments)"
+  ],
+  "Wise EUR": [
+    "Enter your e-mail",
+    "Wise Email (enabled to receive payments)"
+  ],
+  "Payoneer USD": [
+    "Enter your e-mail",
+    "Payoneer email"
+  ],
+  "SWIFT USD": [
+    "Enter your e-mail",
+    "IBAN or Account Number",
+    "Reference for payment(optional)",
+    "Country",
+    "City, address, postal code",
+    "Full name or company name",
+    "ACH/ABA Number (for USA)",
+    "SWIFT/BIC code"
+  ],
+  "SEPA EUR": [
+    "Enter your e-mail",
+    "IBAN or Account Number",
+    "Reference for payment(optional)",
+    "Full name or company name"
+  ],
+  "Skrill USD": [
+    "Enter your e-mail",
+    "Skrill account"
+  ],
+  "Skrill EUR": [
+    "Enter your e-mail",
+    "Skrill account"
+  ],
+  "EasyPaisa PKR": [
+    "Enter your e-mail",
+    "EasyPaisa Account Number",
+    "Full name"
+  ],
+  "Bank Transfer UAH": [
+    "Enter your e-mail",
+    "IBAN",
+    "Reference for payment(optional)",
+    "Full name or company name",
+    "EDRPOU or RNOKPP"
+  ],
+  "Bank Transfer EUR": [
+    "Enter your e-mail",
+    "IBAN",
+    "Reference for payment(optional)",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Bank Transfer AED": [
+    "Enter your e-mail",
+    "IBAN",
+    "Reference for payment(optional)",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Bank Transfer GBP": [
+    "Enter your e-mail",
+    "Account number",
+    "Reference for payment(optional)",
+    "Full name or company name",
+    "Sort Code"
+  ],
+  "Bank Transfer THB": [
+    "Enter your e-mail",
+    "Account number",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Bank Transfer TRY": [
+    "Enter your e-mail",
+    "IBAN",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Bank Transfer GEL": [
+    "Enter your e-mail",
+    "IBAN",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Bank Transfer PLN": [
+    "Enter your e-mail",
+    "IBAN",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Bank Transfer CNY": [
+    "Enter your e-mail",
+    "Card number or account number",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "Bank Transfer PKR": [
+    "Enter your e-mail",
+    "IBAN",
+    "Full name",
+    "Bank name"
+  ],
+  "Bank Transfer NGN": [
+    "Enter your e-mail",
+    "IBAN or account number",
+    "Full name",
+    "Bank name"
+  ],
+  "Bank Transfer IDR": [
+    "Enter your e-mail",
+    "IBAN or account number",
+    "Full name",
+    "Bank name"
+  ],
+  "Bank Transfer INR": [
+    "Enter your e-mail",
+    "IBAN or account number",
+    "Full name",
+    "Bank name",
+    "IFSC Code"
+  ],
+  "Bank Transfer HKD": [
+    "Enter your e-mail",
+    "IBAN or account number",
+    "Full name",
+    "Bank name"
+  ],
+  "Bank Transfer JPY": [
+    "Enter your e-mail",
+    "IBAN or account number",
+    "Full name",
+    "Bank name"
+  ],
+  "Bank Transfer VND": [
+    "Enter your e-mail",
+    "IBAN or account number",
+    "Full name",
+    "Bank name"
+  ],
+  "Alipay CNY": [
+    "Enter your e-mail",
+    "Alipay Account",
+    "Full name or company name"
+  ],
+  "UnionPay CNY": [
+    "Enter your e-mail",
+    "Card number",
+    "Full name or company name",
+    "Bank name"
+  ],
+  "WeChat CNY": [
+    "Enter your e-mail",
+    "WeChat Account"
+  ]
+}
