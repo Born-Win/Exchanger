@@ -200,7 +200,7 @@ body {
     border-right: none;
   }
 
-  .nav__item_active {
+  .nav__item[data-active='true'] {
     font-weight: 500;
     background-color: var(--active-link-bgc);
     color: var(--active-link-font-color);
@@ -422,4 +422,38 @@ body {
 
 .chat-icon-close {
   display: none;
+}
+
+.currency__menu .item__text,
+.banks__menu .item__text {
+  width: calc(100% - 50px);
+}
+
+.short__text{
+  width: 50px;
+}
+
+.menu__list {
+  display: none;
+}
+
+.menu__list[data-active='true'] {
+  display: block;
+}
+
+.not__allowed__block {
+  text-align: center;
+  display: none;
+}
+
+.menu[data-block='true'] .not__allowed__block {
+  display: block;
+}
+
+.menu[data-block='true'] .menu__list {
+  display: none;
+}
+
+.menu__item.item[data-active='true'] {
+  background-color: #d5d5d5
 }

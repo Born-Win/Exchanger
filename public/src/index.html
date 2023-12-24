@@ -15,12 +15,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./script.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="sections-wrapper">
-        <section class="give-away-section section">
+        <section class="give-away-section section" data-id="give-away">
           <h2 class="title">Give away</h2>
           <div class="currency-wrapper">
             <label class="currency__input">
@@ -52,48 +51,17 @@
           <div class="menu" data-id="give-away-menu">
             <nav class="manu__nav nav">
               <ul class="nav__list">
-                <li class="nav__item_active">Crypto</li>
-                <li class="nav__item">Banks</li>
+                <li class="nav__item" data-but-name="crypto" data-active="true">Crypto</li>
+                <li class="nav__item" data-but-name="banks">Banks</li>
               </ul>
             </nav>
-            <ul class="menu__list" data-id="give-away-list">
-              <li class="menu__item item">
-                <img
-                  class="item__logo"
-                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
-                  alt="item__logo"
-                />
-                <p class="item__text">Bitcoin</p>
-              </li>
-              <li class="menu__item item_active">
-                <img
-                  class="item__logo"
-                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
-                  alt="item__logo"
-                />
-                <p class="item__text">Bitcoin</p>
-              </li>
-              <li class="menu__item item">
-                <img
-                  class="item__logo"
-                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
-                  alt="item__logo"
-                />
-                <p class="item__text">Bitcoin</p>
-              </li>
-              <li class="menu__item item">
-                <img
-                  class="item__logo"
-                  src="https://kingex.io/storage/payment_systems/iex-server-YW11H13kJU.png"
-                  alt="item__logo"
-                />
-                <p class="item__text">Bitcoin</p>
-              </li>
-            </ul>
+            <ul class="menu__list currency__menu" data-id="give-away-list" data-menu-name="crypto"></ul>
+            <ul class="menu__list banks__menu" data-id="give-away-list" data-menu-name="banks"></ul>
+            <div class="not__allowed__block">Not allowed</div>
           </div>
         </section>
 
-        <section class="you-receive-section section">
+        <section class="you-receive-section section" data-id="you-receive">
           <h2 class="title">You receive</h2>
           <div class="currency-wrapper">
             <label class="currency__input">
@@ -120,36 +88,13 @@
           <div class="menu" data-id="you-receive-menu">
             <nav class="manu__nav nav">
               <ul class="nav__list">
-                <li class="nav__item">Crypto</li>
-                <li class="nav__item_active">Banks</li>
+                <li class="nav__item" data-but-name="crypto">Crypto</li>
+                <li class="nav__item" data-but-name="banks" data-active="true">Banks</li>
               </ul>
             </nav>
-            <ul class="menu__list" data-id="you-receive-list">
-              <li class="menu__item item_active" data-id="you-receive-item">
-                <img
-                  class="item__logo"
-                  src="https://kingex.io/storage/payment_systems/iex-RNMj9rCQxz.svg"
-                  alt="item__logo"
-                />
-                <p class="item__text" data-id="bank-name">Privat Bank UAH</p>
-                <span class="item__additional-info">
-                  <p data-id="bank-capital">279 584 190,935</p>
-                  <p data-id="country" class="county-currency">UAH</p>
-                </span>
-              </li>
-              <li class="menu__item item" data-id="you-receive-item">
-                <img
-                  class="item__logo"
-                  src="https://kingex.io/storage/payment_systems/iex-RNMj9rCQxz.svg"
-                  alt="item__logo"
-                />
-                <p class="item__text" data-id="bank-name">Privat Bank UAH</p>
-                <span class="item__additional-info">
-                  <p data-id="bank-capital">279 584 190,935</p>
-                  <p data-id="country" class="county-currency">UAH</p>
-                </span>
-              </li>
-            </ul>
+            <ul class="menu__list currency__menu" data-id="you-receive-list" data-menu-name="crypto"></ul>
+            <ul class="menu__list banks__menu" data-id="you-receive-list" data-menu-name="banks"></ul>
+            <div class="not__allowed__block">Not allowed</div>
           </div>
         </section>
 

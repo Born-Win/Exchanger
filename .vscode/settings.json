@@ -1,0 +1,27 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3333,
+            "driver": "MySQL",
+            "name": "MysqlIntergral",
+            "username": "hlibzhykharev",
+            "database": "magic",
+            "password": "dFXG7IjcDqDBE7acgPLmxybh"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Exchanger",
+            "database": "dev",
+            "username": "postgres"
+        }
+    ]
+}
