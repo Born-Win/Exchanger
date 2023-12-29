@@ -20,5 +20,6 @@
   "cron": {
     "time": "00 0 0 * * *"
   },
-  "storageFolder": "storage"
+  "storageFolder": "storage",
+  "apiPassword": "cKZ0sdeBzd9y8TedDV1l"
 }

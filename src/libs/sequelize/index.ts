@@ -3,6 +3,9 @@ import config = require('config');
 import { Cryptocurrency } from '../../cryptocurrencies/models';
 import { Fiat } from '../../fiats/models';
 import { Bank } from '../../banks/models';
+import { Transaction } from '../../transactions/models';
+import { BankBooking } from '../../bank-booking/models';
+import { CryptoBooking } from '../../crypto-booking/models';
 
 export const databaseProvider = {
   provide: 'SEQUELIZE',
@@ -11,7 +14,7 @@ export const databaseProvider = {
 
     await sequelize.authenticate();
 
-    sequelize.addModels([Cryptocurrency, Bank, Fiat]);
+    sequelize.addModels([Cryptocurrency, Bank, Fiat, Transaction, CryptoBooking, BankBooking]);
 
     await sequelize.sync({ alter: true });
 

@@ -11,4 +11,8 @@ export class CryptocurrencyService {
     const cryptocurrencies = await this.cryptocurrencyRepository.findAll();
     return cryptocurrencies;
   }
+
+  getOne(id: number) {
+    return this.cryptocurrencyRepository.findOneById(id);
+  }
 }

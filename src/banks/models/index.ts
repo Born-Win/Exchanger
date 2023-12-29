@@ -1,4 +1,4 @@
-import { Table, Column, Model, DataType, ForeignKey, BelongsTo } from 'sequelize-typescript';
+import { Table, Column, Model, DataType } from 'sequelize-typescript';
 
 @Table({ tableName: 'banks', timestamps: false })
 export class Bank extends Model {
@@ -26,4 +26,22 @@ export class Bank extends Model {
     allowNull: false
   })
   img: string;
+
+  @Column({
+    type: DataType.ARRAY(DataType.STRING),
+    allowNull: false
+  })
+  details: string;
+
+  @Column({
+    type: DataType.STRING,
+    allowNull: false
+  })
+  exchange_details: string;
+
+  @Column({
+    type: DataType.FLOAT,
+    allowNull: false
+  })
+  reserve: number;
 }

@@ -1,5 +1,7 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Query, UsePipes } from '@nestjs/common';
 import { BankService } from '../services';
+import { JoiValidationPipe } from '../../pipes/joi';
+import { bankValidationSchema } from '../validation/schemas';
 
 @Controller('banks')
 export class BankController {
@@ -7,10 +9,20 @@ export class BankController {
 
   @Get()
   async getAll() {
-    const result = await this.bankService.getAll();
+    const result = await this.bankService.getAll()
 
     return {
       banks: result
+    };
+  }
+
+  @Get('/one')
+  @UsePipes(new JoiValidationPipe(bankValidationSchema.getOne))
+  async getOne(@Query() query: { id: string }) {
+    const result = await this.bankService.getOne(+query.id)
+
+    return {
+      bank: result
     };
   }
 }

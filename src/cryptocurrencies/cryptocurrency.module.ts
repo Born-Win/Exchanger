@@ -14,6 +14,6 @@ import { CryptocurrencyController } from './controllers';
     CryptocurrencyRepository,
     CryptocurrencyService
   ],
-  exports: [CryptocurrencyRepository]
+  exports: [CryptocurrencyRepository, CryptocurrencyService]
 })
 export class CryptocurrencyModule {}

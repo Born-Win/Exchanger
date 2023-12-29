@@ -14,5 +14,6 @@ import { BankController } from './controllers';
     BankRepository,
     BankService
   ],
+  exports: [BankService]
 })
 export class BankModule {}

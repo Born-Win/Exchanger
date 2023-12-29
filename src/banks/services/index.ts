@@ -9,4 +9,9 @@ export class BankService {
     const banks = await this.bankRepository.findAll();
     return banks;
   }
+
+  async getOne(id: number) {
+    const bank = await this.bankRepository.findOneById(id);
+    return bank;
+  }
 }

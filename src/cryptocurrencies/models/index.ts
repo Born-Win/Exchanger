@@ -26,4 +26,22 @@ export class Cryptocurrency extends Model {
     allowNull: false
   })
   img: string;
+
+  @Column({
+    type: DataType.FLOAT,
+    allowNull: false
+  })
+  min_exchange: number;
+
+  @Column({
+    type: DataType.STRING,
+    allowNull: false
+  })
+  wallet: string;
+
+  @Column({
+    type: DataType.FLOAT,
+    allowNull: false
+  })
+  reserve: number;
 }

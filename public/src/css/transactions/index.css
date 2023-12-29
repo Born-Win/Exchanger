@@ -144,14 +144,20 @@ body {
   height: 40px;
 }
 
-.check-details {
-  text-align: center;
+.get-details {
   background-color: #95abb7;
   color: #222332;
   font-size: 14px;
   padding: 2px 3px;
   border-radius: 3px;
+  height: 35px;
   cursor: pointer;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.get-details:hover {
+  color: gray;
 }
 
 .payment__translate {
@@ -182,6 +188,7 @@ body {
   align-items: center;
   padding-inline: 15px;
   border: 1px solid var(--active-link-font-color);
+  color: white;
   border-radius: var(--form-border-radius);
   .field {
     height: 100%;
@@ -200,7 +207,6 @@ body {
   background-color: var(--item-active-bgc);
   border-radius: var(--form-border-radius);
   padding: 20px;
-  margin-bottom: 100px;
 }
 
 .tooltip__text {
@@ -215,13 +221,24 @@ body {
   align-items: center;
   justify-content: space-between;
   .paid-btn,
-  .cancel-btn {
+  .cancel-btn,
+  .to-main-btn {
     width: calc((100% / 2) - 20px);
     border-radius: var(--form-border-radius);
     height: 70px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    margin: 10px;
+  }
+
+  .to-main-btn {
+    background: #d2d3d873;;
+    color: black;
+  }
+
+  .to-main-btn:hover {
+    background: #b5b6b873;
   }
 
   .paid-btn {

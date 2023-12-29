@@ -4,7 +4,8 @@ import { GlobalModule } from './global.module';
 import { CryptocurrencyModule } from '../cryptocurrencies/cryptocurrency.module';
 import { BankModule } from '../banks/bank.module';
 import { ExchangeRateModule } from '../exchange-rates/exchange-rate.module';
-import { SettingsModule } from '../settings/settings.module';
+import { TransactionModule } from '../transactions/transaction.module';
+import { CryptoBookingModule } from '../crypto-booking/crypto-booking.module';
 import { StaticFilesController } from '../static';
 import * as ExceptionFilters from '../exception-filters';
 import { ServeStaticModule } from '@nestjs/serve-static';
@@ -16,7 +17,8 @@ import { join } from 'path';
     CryptocurrencyModule,
     BankModule,
     ExchangeRateModule,
-    SettingsModule,
+    TransactionModule,
+    CryptoBookingModule,
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '../../public'),
       serveRoot: '/',

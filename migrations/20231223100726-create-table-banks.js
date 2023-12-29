@@ -26,9 +26,20 @@ module.exports = {
         type: DataTypes.STRING,
         allowNull: false
       },
+      details: {
+        type: DataTypes.ARRAY(DataTypes.STRING),
+        allowNull: false
+      },
+      exchange_details: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      reserve: {
+        type: DataTypes.FLOAT,
+        allowNull: false
+      }
     });
   },
-
   down: queryInterface => {
     return queryInterface.dropTable(banksTableName);
   }

@@ -25,7 +25,7 @@ export class HomeView {
         `;
   }
 
-  _generateInputsHTML(fieldsPlaceholders = []) {
+  generateInputsHTML(fieldsPlaceholders = []) {
     const inputsList = $('.inputs-list');
     if (fieldsPlaceholders.length) inputsList.find('.input-wrapper').remove();
     fieldsPlaceholders.map((placeolder, id) => {
@@ -34,6 +34,7 @@ export class HomeView {
           <input
             class="input-field"
             type="text"
+            data-type="${placeolder}"
             placeholder="${placeolder}"
           />
           ${
@@ -87,10 +88,7 @@ export class HomeView {
     );
   }
 
-  changeInputImgHtml(url) {
-    $('.card-number-field')
-      .parent('.input-wrapper')
-      .find('img')
-      .attr('src', url);
-  }
+   changeInputImgHtml(url) {
+      $('.input-wrapper').find('img').attr('src', url);
+   }
 }

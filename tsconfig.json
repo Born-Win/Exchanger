@@ -21,7 +21,8 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "preserveSymlinks": true
+    "preserveSymlinks": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*",

@@ -1,0 +1,1 @@
+export type CryptoBookingFindDto = { id: number } | { crypto_id: number };

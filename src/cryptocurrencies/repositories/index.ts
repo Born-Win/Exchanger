@@ -6,6 +6,9 @@ type CryptocurrencyData = {
   id: number;
   name: string;
   symbol: string;
+  img: string;
+  min_exchange: number;
+  wallet: string;
 };
 
 @Injectable()
@@ -18,5 +21,10 @@ export class CryptocurrencyRepository {
   async findAll(): Promise<CryptocurrencyData[]> {
     const cryptocurrencies = await this.cryptocurrency.findAll();
     return safeToJson(cryptocurrencies);
+  }
+
+  async findOneById(id: number): Promise<CryptocurrencyData> {
+    const cryptocurrency = await this.cryptocurrency.findByPk(id);
+    return safeToJson(cryptocurrency);
   }
 }

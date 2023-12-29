@@ -1,4 +1,4 @@
-import '../index.css';
+import '../../css/home/index.css';
 import { HomeController } from './controller';
 import { HomeView } from './view';
 import { HomeModel } from './model';

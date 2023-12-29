@@ -1,0 +1,1 @@
+export type BankBookingFindDto = { id: number } | { bank_id: number };

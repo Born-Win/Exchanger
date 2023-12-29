@@ -4,6 +4,8 @@ import {
   NestFastifyApplication
 } from '@nestjs/platform-fastify';
 import { SettingsService } from '../settings/services';
+import { KrakenSocketClientProvider } from '../libs/kraken';
+import { ExchangeRateService } from '../exchange-rates/services';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 
@@ -19,13 +21,17 @@ export class App {
       AppModule,
       new FastifyAdapter()
     );
-    // App.app.setGlobalPrefix('v1');
 
     App.app.enableCors();
     
     const settingsService = App.app.get<SettingsService>(SettingsService);
     await settingsService.load();
 
+    const krakenService = App.app.get<KrakenSocketClientProvider>(KrakenSocketClientProvider);
+    krakenService.init();
+    
+    const exchangeRateService = App.app.get<ExchangeRateService>(ExchangeRateService);
+    exchangeRateService.init();
 
     const config = new DocumentBuilder()
       .setTitle('Crypto-exchanger API documentation')

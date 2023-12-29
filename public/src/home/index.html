@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -25,7 +25,7 @@
             <label class="currency__input">
               <input
                 class="curency__field"
-                type="text"
+                type="number"
                 placeholder="Enter the number"
                 data-id="give-away-input"
               />
@@ -38,13 +38,9 @@
               </span>
             </label>
             <div class="hint-pointer">
-              <span class="hint-pointer__from from"
-                >from
-                <p class="from__value">50271</p></span
-              >
               <span class="hint-pointer__before before"
-                >before
-                <p class="before__value">7734000 UAH</p></span
+                >Reserve:
+                <p class="reserve__value"></p></span
               >
             </div>
           </div>
@@ -77,7 +73,7 @@
             <label class="currency__input">
               <input
                 class="curency__field"
-                type="text"
+                type="number"
                 placeholder="Enter the number"
                 data-id="you-receive-input"
               />
@@ -91,7 +87,7 @@
             </label>
             <div class="hint-pointer">
               Reserve:
-              <p class="reserve__value">165.302891458 BTC</p>
+              <p class="reserve__value"></p>
             </div>
           </div>
 
@@ -119,14 +115,15 @@
         </section>
 
         <section class="we-change-section section">
-          <h2 class="title">We change Raiffeisen Bank UAH on Bitcoin</h2>
-
           <div class="exchange-rate">
             <div class="exchange-rate__value">
               <p class="label">exchange-rate:</p>
               <p class="from-value">1 BTC</p>
               <p class="equal">=</p>
-              <p class="to-value">1554926.6362 UAH</p>
+              <p class="to-value">
+                <span class="current__rate"></span>
+                <span class="current__fiat"></span>
+              </p>
             </div>
             <div class="timer">
               <div class="timer__progress-bar"></div>

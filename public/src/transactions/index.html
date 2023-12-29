@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <!-- <link rel="stylesheet" href="./payment.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="payment">
+        <div class="payment__head">
+          <h2 class="payment__status"></h2>
+          <span class="payment__number"></span>
+        </div>
+        <div class="payment__info">
+          <div class="payment__info-inner">
+            <div class="you-are-sending">
+              <div class="you-are-sending__inner">
+                <p class="you-are-sending__text">you are sending</p>
+                <p class="you-are-sending__amount"></p>
+                <p class="you-are-sending__additional"></p>
+              </div>
+              <img
+                class="you-are-sending__logo"
+                src=""
+                alt="logo"
+              />
+            </div>
+
+            <div>
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/ios/50/forward--v1.png"
+                alt="forward--v1"
+              />
+            </div>
+
+            <div class="you-are-getting">
+              <img
+                class="you-are-getting__logo"
+                src=""
+                alt="logo"
+              />
+              <div class="you-are-getting__inner">
+                <p class="you-are-getting__text">you are getting</p>
+                <p class="you-are-getting__amount"></p>
+                <p class="you-are-getting__additional"></p>
+              </div>
+            </div>
+          </div>
+          <button class="get-details">Get exchange details</button>
+        </div>
+
+        <div class="payment__translate">
+          <div class="fields-wrapper">
+            <label class="input" data-id="input-from"></label>
+          </div>
+          <div class="tooltip">
+            <p class="tooltip__text">
+              After making the transfer, be sure to click the "I paid" button
+              and wait for the exchange to complete
+            </p>
+          </div>
+
+          <div class="controls">
+            <button class="paid-btn" data-type="pay">I paid</button>
+            <button class="cancel-btn" data-type="cancel">Cancel</button>
+            <button class="to-main-btn" data-type="to-main">To main</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

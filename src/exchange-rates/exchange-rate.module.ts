@@ -4,8 +4,12 @@ import { ExchangeRateRepository } from './repositories';
 import { ExchangeRateService } from './services';
 import { ExchangeRateController } from './controllers';
 import { KrakenSocketClientProvider } from '../libs/kraken';
+import { SettingsService } from '../settings/services';
+import { CryptocurrencyModule } from '../cryptocurrencies/cryptocurrency.module';
+import { FiatModule } from '../fiats/fiat.module';
 
 @Module({
+  imports: [CryptocurrencyModule, FiatModule],
   controllers: [ExchangeRateController],
   providers: [
     {
@@ -14,7 +18,8 @@ import { KrakenSocketClientProvider } from '../libs/kraken';
     },
     ExchangeRateRepository,
     ExchangeRateService,
-    KrakenSocketClientProvider
+    KrakenSocketClientProvider,
+    SettingsService
   ],
   exports: [ExchangeRateService]
 })

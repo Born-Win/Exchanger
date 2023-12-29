@@ -12,8 +12,13 @@ const configPlugins = () => {
     new MiniCssExtractPlugin({ filename: './css/[name][contenthash].css' }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.html',
-      chunks: ['js/index', 'js/controller', 'js/view', 'js/model']
+      template: './src/home/index.html',
+      chunks: ['js/home/index', 'js/home/controller', 'js/home/view', 'js/home/model']
+    }),
+    new HtmlWebpackPlugin({
+      filename: './transactions/index.html',
+      template: './src/transactions/index.html',
+      chunks: ['js/transactions/index', 'js/transactions/controller', 'js/transactions/view', 'js/transactions/model']
     }),
   ];
 
@@ -33,10 +38,14 @@ module.exports = {
   context: path.resolve(__dirname, 'public'),
   mode: 'development',
   entry: {
-    'js/index': ['@babel/polyfill', './src/js/index.js'],
-    'js/controller': ['@babel/polyfill', './src/js/controller.js'],
-    'js/view': ['@babel/polyfill', './src/js/view.js'],
-    'js/model': ['@babel/polyfill', './src/js/model.js'],
+    'js/home/index': ['@babel/polyfill', './src/js/home/index.js'],
+    'js/home/controller': ['@babel/polyfill', './src/js/home/controller.js'],
+    'js/home/view': ['@babel/polyfill', './src/js/home/view.js'],
+    'js/home/model': ['@babel/polyfill', './src/js/home/model.js'],
+    'js/transactions/index': ['@babel/polyfill', './src/js/transactions/index.js'],
+    'js/transactions/controller': ['@babel/polyfill', './src/js/transactions/controller.js'],
+    'js/transactions/view': ['@babel/polyfill', './src/js/transactions/view.js'],
+    'js/transactions/model': ['@babel/polyfill', './src/js/transactions/model.js'],
   },
   output: {
     filename: '[name][contenthash].js',
